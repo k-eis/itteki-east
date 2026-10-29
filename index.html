@@ -81,7 +81,7 @@ const Q=[
 {t:"犀の角のようにただ独り歩め。",p:"『スッタニパータ』",o:"犀の角"},
 {t:"ゆく河の流れは絶えずして、しかももとの水にあらず。",p:"鴨長明",o:"『方丈記』冒頭"},
 {t:"古池や蛙飛びこむ水の音。",p:"松尾芭蕉",o:"俳句"},
-{t:"災難に逢う時節には、災難に逢うがよく候。",p:"良寛",o:"書簡（三条地震のあと、1828）"},
+{t:"災難に逢う時節には、災難に逢うがよく候。",p:"良寛",o:"書簡（三条地震のあと、文政十一年）"},
 {t:"春は花、夏ほととぎす、秋は月、冬雪さえて冷しかりけり。",p:"道元",o:"『傘松道詠』"}
 ];
 
@@ -198,7 +198,7 @@ function markDrawn(){try{localStorage.setItem(KEY+"-day",nowDay())}catch(e){}}
 function showNote(){
   busy=true;
   after(reduce?200:700,()=>{
-    q.textContent="言葉との出会いは、一日一回です。\n0時以降に、次の言葉と出会えます。";
+    q.textContent="言葉との出会いは、一日一回です。\n零時を過ぎれば、次の言葉と出会えます。";
     meta.hidden=true;art.classList.add("note");place();
     art.style.visibility="visible";
     q.classList.add("on");
